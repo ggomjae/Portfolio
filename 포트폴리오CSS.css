@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+        
+nav a:link,a:visited {
+    color: black;
+}
+
+nav a:active {
+    color: #0094ff;
+}
+
+#nav-aboutme:hover{
+    cursor:pointer;
+    font-weight:bold;
+}
+#nav-skill:hover{
+    cursor:pointer;
+    font-weight:bold;
+}
+#nav-personalproject:hover{
+    cursor:pointer;
+    font-weight:bold;
+}
+#nav-teamproject:hover{
+    cursor:pointer;
+    font-weight:bold;
+}
+#nav-contact:hover{
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.git:hover, .blog:hover, .introBlog:hover{
+    cursor:pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2), 0 3px 6px rgba(223, 13, 13, 0.2);
+}
+
+.skill_box_image:hover, .skill_box_image_oracle:hover, .skill_box_image_spring:hover{
+
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2); 
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.2, M12=0, M21=0, M22=1.2, SizingMethod='auto expand')"; 
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.2, M12=0, M21=0, M22=1.2, SizingMethod='auto expand');
+}
+
+
+h2 {
+    font-size: 1.3em;
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 2.5;
+}
+
+li {
+    font-size: 1em;
+    line-height: 2;
+}
+
+nav {
+    height: 50px;
+}
+
+#main-nav {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    color : black;
+}
+
+#main-nav li {
+    display: inline-block;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 0.8em;
+    margin: 5px 15px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    padding: 15px 5% 10px 5%;
+}
+
+.page-title {
+    padding: 0px 400px 0px 400px;
+    text-align: center;
+    
+}
+
+.page-title h3{
+    background-color:white;
+    border-bottom: 1px solid #7b7cd4;
+}
+.page-title-skill{
+    padding: 0px 400px 40px 400px;
+    text-align: center;
+}
+
+.page-title-skill h3{
+    background-color:white;
+    border-bottom: 1px solid #7b7cd4;
+}
+
+.content {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0 0 30px;
+    
+}
+
+.sub-titles {
+    color: #0094ff;
+    font-weight: 600;
+}
+
+.photo {
+    display: none;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #000;
+}
+
+footer p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+header {
+    height: 400px;
+}
+
+#intro,#skill ,#personalProjectOne,#teamProjectOne{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    height: 400px;
+    float: left;
+    margin: 0;
+    border: 1px dotted #ccc;
+    font-family: Noto Sans KR,sans-serif;
+}
+
+#teamProjectOne{
+    border-bottom:white;
+}
+
+#teamProjectTwo{
+    clear: left;
+}
+
+#container {
+    width: 995px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+header {
+    height: 120px;
+}
+
+#intro,#skill{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: 15px 15px 15px 15px;
+}
+
+            
+#personalProjectOne,#teamProjectOne,#teamProjectTwo {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 340px;
+    padding: 15px 15px 15px 15px;
+}
+
+.photo {
+    width: 42%;
+    display: block;
+}
+
+.photo>img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+    padding: 40px 0 0 10px ;
+}
+
+#me{
+    width: 100%;
+    max-width: 200px;
+    max-height: 300px;
+    padding: 10px 0 0 30px;
+}
+
+
+.text {
+    width: 42%;
+}
+
+#intro .photo,#skill .photo,#personalProjectOne .photo,
+#teamProjectOne .photo ,#teamProjectTwo .photo{
+    float: left;
+    margin-right: 5%;
+}
+
+#intro .text{
+    padding: 50px 0 0 50px;
+    float: left;
+}
+
+#skill .text,#personalProjectOne .text,
+#teamProjectOne .text ,#teamProjectTwo .text{
+    padding: 20px 0 0 50px;
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+.site_meta{
+    margin: 0;
+    text-align: center;
+}
+.logo{
+    margin: 0 220px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 3;
+    color :white;
+    background-color: black;
+}
+
+.header{
+    background: white;
+}
+
+.title{
+    margin:10px 0 25px 0;
+    font-size: 16px;
+}
+
+.header .siteFrame{
+    background: white;
+    margin: 0 auto;
+    padding: 100px 0 0px ;
+    width : 700px;
+}
+
+#top{
+    height: 2px;
+    background: black;
+}
+
+ul ,ol{
+    list-style: none;
+}
+
+span img {
+    max-width: 30px;
+    margin: 10px 10px; 
+}
+.skill_box{
+    text-align: center;
+    margin: 0 0 25px;
+}
+.skill_box_image{
+    text-align: center;
+    display: inline-block;
+    width: 114px;
+    height: 116px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+    border-radius: 30px 30px;
+    background-size: cover;
+    margin-right: 2rem; 
+}
+
+.skill_box_image_oracle{
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 116px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+    border-radius: 30px 30px;
+    background-size: cover;
+    margin-right: 2rem; 
+}
+.skill_box_image_spring{
+    text-align: center;
+    display: inline-block;
+    width: 130px;
+    height: 116px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+    border-radius: 30px 30px;
+    background-size: cover;
+    margin-right: 2rem; 
+}
+.git,.blog{
+    text-align: center;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+    border-radius: 30px 30px;
+    background-size: cover;
+    margin-right: 2rem;
+}
+.gitblogBox{
+    margin: 20px;
+}
+.introBlog{
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+    border-radius: 30px 30px;
+    background-size: cover;
+    
+}
